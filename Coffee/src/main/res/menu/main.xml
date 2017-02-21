@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!-- android:actionViewClass="android.widget.SearchView"属性后，
+    此条MenuItem图片显示为搜索图片，点击后出现搜索框，点搜索框右边的X退出搜索模式，
+    如果在android:showAsAction属性中加上collapseActionView属性，那么MenuItem图片为自定义的图片，
+    并且靠点击左上角图片退出搜索模式-->
+    <!--orderInCategory值越大优先级越高 -->
+    <item
+        android:id="@+id/item1"
+        android:orderInCategory="80"
+        android:title="搜索"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/item_2"/>
+    <!-- android:actionViewClass="android.support.v7.widget.ShareActionProvider"为分享-->
+    <item
+        android:id="@+id/item2"
+        android:orderInCategory="90"
+        android:title="分享"
+        app:actionProviderClass="android.widget.ShareActionProvider"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item3"
+        android:orderInCategory="100"
+        android:title="设置"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/item4"
+        android:orderInCategory="100"
+        android:title="关于"
+        app:showAsAction="never" />
+
+
+</menu>
