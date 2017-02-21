@@ -1,0 +1,17 @@
+body{
+	font-family: 'times new roman','微软雅黑','宋体','黑体','楷体';
+	overflow-y: scroll; 
+}
+.navbar-inner{
+	background: #000000 !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+body *{
+	-webkit-border-radius: 5px !important;
+     -moz-border-radius: 5px !important;
+          border-radius: 5px !important;
+}
+.nav-stacked li a{
+	color: #003366;
+}
